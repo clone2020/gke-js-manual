@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: nodeapp
+  labels:
+    app: nodeapp
+    type: backend
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: nodeapp
+  template:
+    metadata:
+      labels:
+        app: nodeapp
+        type: backend
+    spec:
+      containers:
+      - name: nodeapp
+        image: us-east1-docker.pkg.dev/even-impulse-453102-f1/dockerimage-repo/nodeapp:v1
+        ports:
+        - containerPort: 3000
