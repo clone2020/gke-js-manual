@@ -1,7 +1,9 @@
 
+<p>
 <img src="https://img.shields.io/github/forks/clone2020/gke-js-manual">
 <img src="https://img.shields.io/github/license/clone2020/gke-js-manual">
 <img src="https://img.shields.io/github/stars/clone2020/gke-js-manual">
+</p>
 
 # Deploy an Application to GKE(Google Kubernetes Engine) 
 ### Tech used:
